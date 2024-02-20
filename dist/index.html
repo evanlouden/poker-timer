@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tailwind.css">
+  <script src="app.js"></script>
+  <title>PokerTimer</title>
+</head>
+
+<body id="body" class="bg-green-800">
+  <button id="timer-toggle" type="button"
+    class="absolute bottom-4 left-2 inline-block px-6 py-2.5 bg-white font-medium text-xl leading-tight uppercase rounded shadow-md">Start</button>
+  <input type="file"></input>
+  <div id="set-level-wrapper" class="absolute hidden bottom-4 right-2">
+    <label for="set-level" class="text-lg text-white">Set Level</label>
+    <select name="set-level" id="set-level">
+    </select>
+  </div>
+
+  <div class="flex">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-3 justify-items-center md:mt-12 xl-mt-48">
+        <div class="inline-block text-3xl font-light text-center text-white">
+          <div class="mb-12">
+            Small
+          </div>
+          <div id="small" class="font-bold text-8xl">
+
+          </div>
+        </div>
+        <div class="text-3xl font-light text-center text-white">
+          <div class="mb-12">
+            Big
+          </div>
+          <div id="big" class="font-bold text-8xl">
+
+          </div>
+        </div>
+        <div class="text-3xl font-light text-center text-white">
+          <div class="mb-12">
+            Ante
+          </div>
+          <div id="ante" class="font-bold text-8xl">
+
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-36">
+        <div id="count" style="line-height: 1; font-size: 10rem;" class="flex justify-center text-white">0:00</div>
+      </div>
+      <div id="break" class="flex justify-center h-12 text-5xl italic text-white"></div>
+      <div class="w-1/2 mx-auto">
+        <div class="grid grid-cols-3 justify-items-center md:mt-24 xl-mt-48">
+          <div class="inline-block text-xl font-light text-center text-white">
+            <div class="mb-12">
+              Small
+            </div>
+            <div id="next_small" class="text-2xl font-bold">
+
+            </div>
+          </div>
+          <div class="text-xl font-light text-center text-white">
+            <div class="mb-12">
+              Big
+            </div>
+            <div id="next_big" class="text-2xl font-bold">
+
+            </div>
+          </div>
+          <div class="text-xl font-light text-center text-white">
+            <div class="mb-12">
+              Ante
+            </div>
+            <div id="next_ante" class="text-2xl font-bold">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-col">
+      <div
+        class="flex items-center justify-center w-24 h-24 m-8 text-2xl bg-white border-2 border-black rounded-full shadow drop-shadow-lg">
+        100
+      </div>
+      <div
+        class="flex items-center justify-center w-24 h-24 m-8 text-2xl text-white bg-red-600 border-2 border-black rounded-full shadow drop-shadow-lg">
+        1000
+      </div>
+      <div
+        class="flex items-center justify-center w-24 h-24 m-8 text-2xl text-white bg-blue-900 border-2 border-black rounded-full shadow drop-shadow-lg">
+        5000
+      </div>
+      <div
+        class="flex items-center justify-center w-24 h-24 m-8 text-2xl bg-yellow-500 border-2 border-black rounded-full shadow drop-shadow-lg">
+        25000
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
